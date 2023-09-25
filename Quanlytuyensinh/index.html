@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm chuẩn</title>
+</head>
+<body>
+    <h1>Tính điểm chuẩn</h1>
+    
+    <label for="diem-mon1">Nhập điểm môn 1:</label>
+    <input type="number" id="diem-mon1"><br><br>
+    
+    <label for="diem-mon2">Nhập điểm môn 2:</label>
+    <input type="number" id="diem-mon2"><br><br>
+    
+    <label for="diem-mon3">Nhập điểm môn 3:</label>
+    <input type="number" id="diem-mon3"><br><br>
+    
+    <label for="khu-vuc">Chọn khu vực:</label>
+    <select id="khu-vuc">
+        <option value="A">Khu vực A</option>
+        <option value="B">Khu vực B</option>
+        <option value="C">Khu vực C</option>
+        <option value="D">Khu vực D</option>
+    </select><br><br>
+    
+    <label>Chọn đối tượng:</label><br>
+    <input type="radio" id="doi-tuong-1" name="doi-tuong" value="1">
+    <label for="doi-tuong-1">Đối tượng 1</label><br>
+    
+    <input type="radio" id="doi-tuong-2" name="doi-tuong" value="2">
+    <label for="doi-tuong-2">Đối tượng 2</label><br>
+    
+    <input type="radio" id="doi-tuong-3" name="doi-tuong" value="3">
+    <label for="doi-tuong-3">Đối tượng 3</label><br><br>
+    
+    <button onclick="tinhDiemChuan()">Tính điểm chuẩn</button>
+    
+    <p id="ket-qua"></p>
+    
+<script src="./index.js"></script>
+</body>
+</html>

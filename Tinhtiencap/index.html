@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quản lý kết nối</title>
+</head>
+<body>
+  <h2>Loại khách hàng:</h2>
+  <select id="customerType" onchange="showHideConnectionInput()">
+    <option value="caNhan">Cá Nhân</option>
+    <option value="doanhNghiep">Doanh Nghiệp</option>
+  </select>
+
+  <div id="connectionInput" style="display: none;">
+    <h2>Nhập số kết nối:</h2>
+    <input type="number" id="numConnections" onchange="calculatePrice()">
+  </div>
+
+  <div id="totalPrice" style="display: none;">
+    <h2>Tổng tiền:</h2>
+    <span id="price">0$</span>
+  </div>
+
+ <script src="./index.js"></script>  
+</body>
+</html>
